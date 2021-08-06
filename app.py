@@ -8,5 +8,4 @@ app = Flask(__name__)
 def index():
     date = datetime.date.today()
     return render_template('index.html',date=date)
-
-app.run(host='0.0.0.0', port=8080,deb
+app.run(host='0.0.0.0', port=8080,debug=True)
